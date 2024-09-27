@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pistachio's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="pista.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/24/df/2b/24df2b5811c37cb35dbae025efd5adc9.jpg" alt="Banner Image">
+        <h2>pisstachio's home</h2>
+    </header>
+
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="design.html">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wallpapers.html">Wallpapers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profilepics.html">Pfps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Art portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="learning.html">Learning</a>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+
+
+    <section id="gallery">
+      <h2>Image Gallery</h2>
+      <div class="gallery-grid">
+          <!-- Existing Cards -->
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/d8/8a/ff/d88affc483c0cde009c488637f7dc9ac.jpg" alt="Image 15">
+              <div class="card-title"><a href="#">Image 15</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/67/ac/7c/67ac7cac47b0dfd65b06a7ed40aabc0f.jpg" alt="Image 16">
+              <div class="card-title"><a href="#">Image 16</a></div>
+          </div>
+          <!-- Add more cards here -->
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/98/81/d4/9881d4fcaaf042ba0d25a18552027c2f.jpg" alt="Image 17">
+              <div class="card-title"><a href="#">Image 17</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/fb/8b/6d/fb8b6d807ccda5b46ac9c3397742a64d.jpg" alt="Image 18">
+              <div class="card-title"><a href="#">Image 18</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/3b/11/35/3b113536c742ff82fb4f0575d72e670b.jpg" alt="Image 19">
+              <div class="card-title"><a href="#">Image 19</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/e9/7e/50/e97e506b155f0b52009a387723a9e5a7.jpg" alt="Image 7">
+              <div class="card-title"><a href="#">Image 7</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/9b/9d/b0/9b9db0fa098443033a050e89910e6a5e.jpg" alt="Image 20">
+              <div class="card-title"><a href="#">Image 20</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/59/57/04/59570448c4375ba7f6527b8eb8a8047a.jpg" alt="Image 8">
+              <div class="card-title"><a href="#">Image 8</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/80/0a/ee/800aee4be58e58aa0dbe8efb61ff27ee.jpg" alt="Image 14">
+              <div class="card-title"><a href="#">Image 14</a></div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/736x/9e/18/25/9e182587248e4ec5e2e8deda42215ced.jpg" alt="Image 13">
+              <div class="card-title"><a href="#">Image 13</a></div>
+          </div>
+      </div>
+  </section>
+
+    <!-- The Modal -->
+<div id="imageDownloadModal" class="modal" tabindex="-1">
+
+    <!-- Modal content -->
+        <div class="modal-dialog"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalHeader"></h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6" width="100%" style="align-items: center;">
+                            <img id="modalImage" src="dummy.jpg" alt="Image 2" height="200px;">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                            <p>Some text in the Modal Body</p>
+                            <p>Some other text...</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        </div>
+    
+  </div>
+
+    <footer>
+        <div class="rounded-social-buttons">
+            <a class="social-button pinterest" href="https://in.pinterest.com/CiGi10/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigis_corner/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigi.eats/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/in/prachi-gore-604416294" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-button youtube" href="https://youtube.com/@poistah?si=hJWnNMEkSg8xhiKW" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social-button email" href="mailto:chiprarego@gmail.com?subject=Contact&body=Hello!%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        var modal = document.getElementById("imageDownloadModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+}
+    </script>
+</body>
+</html>

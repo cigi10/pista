@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pistachio's Website</title>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="pista.js"></script>
+</head>
+
+<body>
+    <div id="pistaHeader">
+        <h2 style="color: white; text-align: center;">Pistachio's</h2>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler content-mobile" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse content-desktop" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="design.html">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wallpapers.html">Wallpapers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profilepics.html">Pfps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Art portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="learning.html">Learning</a>
+                </li>
+            </ul>
+        </nav>
+
+        
+    </nav>    
+
+    <!-- The Modal -->
+    <div id="imageDownloadModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalHeader"></h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img id="modalImage" src="" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>Some text in the Modal Body</p>
+                            <p>Some other text...</p>
+                            <button id="downloadButton" class="btn" onclick="downloadImage();">Download <i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" width="100%">
+        <h2>Wallpapers by cigi10/poistah</h2>
+        <div id='imageDisplayArea1' class="row">
+            
+            <div class="col-sm card">
+                <img src="images/train.png" alt="Train Image" id="image_1" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Train</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/12/83/61/128361784b59dce7ce3b6d7230856466.jpg" alt="Image 2" id="image_2" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 2</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/0e/b2/e4/0eb2e47cd414749579aa9f3524fd8cf6.jpg" alt="Image 3" id="image_3" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 3</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/ff/77/b7/ff77b76ba094f7cf4354752691b30787.jpg" alt="Image 4" id="image_4" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 4</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/ec/a3/93/eca3932ae6a1e5a745b920b2e5846cea.jpg" alt="Image 5" id="image_5" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 5</a></h5>
+            </div>
+
+            
+            
+        </div>
+        <div id='imageDisplayArea2' class="row">
+            
+            <div class="col-sm card">
+                <img src="images/train.png" alt="Train Image" id="image_1" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Train</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/12/83/61/128361784b59dce7ce3b6d7230856466.jpg" alt="Image 2" id="image_2" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 2</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/0e/b2/e4/0eb2e47cd414749579aa9f3524fd8cf6.jpg" alt="Image 3" id="image_3" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 3</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/ff/77/b7/ff77b76ba094f7cf4354752691b30787.jpg" alt="Image 4" id="image_4" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 4</a></h5>
+            </div>
+            <div class="col-sm card">
+                <img src="https://i.pinimg.com/736x/ec/a3/93/eca3932ae6a1e5a745b920b2e5846cea.jpg" alt="Image 5" id="image_5" onclick="showDownloadPopup(this);">
+                <h5 class="card-title"><a href="image-download.html">Image 5</a></h5>
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="rounded-social-buttons">
+            <a class="social-button pinterest" href="https://in.pinterest.com/CiGi10/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigis_corner/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigi.eats/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/in/prachi-gore-604416294" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-button youtube" href="https://youtube.com/@poistah?si=hJWnNMEkSg8xhiKW" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social-button email" href="mailto:chiprarego@gmail.com?subject=Contact&body=Hello!%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+QsEGJLV8z9D5l2p2Eiw5sRojkDikF0wNfo3xkG2a" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-c2FWWt4iFZB1TkEnkT/5fyCJ5e6cllO4hOOn+HEhKCEhuB1KO2z8P1ay6k6h1IBH9" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+QsEGJLV8z9D5l2p2Eiw5sRojkDikF0wNfo3xkG2a" crossorigin="anonymous"></script>
+
+    <script>
+        function showDownloadPopup(imgElement) {
+            var modal = document.getElementById("imageDownloadModal");
+            var modalImg = document.getElementById("modalImage");
+            var modalHeader = document.getElementById("modalHeader");
+            
+            modalImg.src = imgElement.src;
+            modalHeader.textContent = imgElement.alt;
+            
+            modal.style.display = "block";
+        }
+
+        document.querySelector(".modal .close").onclick = function() {
+            document.getElementById("imageDownloadModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("imageDownloadModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
