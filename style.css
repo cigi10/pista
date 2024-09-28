@@ -95,33 +95,36 @@ a:hover {
     cursor: pointer;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px; /* Reduced padding */
+    margin: 20px 0; /* Added margin to create space above and below the footer */
 }
 
 .rounded-social-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px; /* Reduced gap between social buttons */
 }
 
 .social-button {
-    display: inline-block;
+    width: 50px; /* Set a fixed width for circular shape */
+    height: 50px; /* Set a fixed height for circular shape */
+    display: flex; /* Change to flex for centering */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
     font-size: 20px;
     color: #FFFBEF; /* Cream color for social buttons */
     text-decoration: none;
-    padding: 10px;
-    border-radius: 50%;
+    border-radius: 50%; /* Ensures circular shape */
     transition: background-color 0.3s, color 0.3s; /* Added color transition */
+    background-color: transparent; /* Optional: Ensure initial background is transparent */
 }
 
 .social-button:hover {
     background-color: #A3B18A; /* Sage green for background on hover */
     color: #FFFBEF; /* Keep the icon color cream on hover */
 }
-
 .sidebar {
     padding: 20px; /* Add padding around the sidebar content */
     border: 2px solid #FFFBEF; /* Cream border */
