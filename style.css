@@ -1,18 +1,32 @@
+/* Import JetBrains Mono font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
 
+/* General body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'JetBrains Mono', monospace; /* Normal text uses JetBrains Mono */
     margin: 0;
     padding: 0;
     background-color: #191919; 
-    color: #FFFBEF; 
-
+    color: #FFFBEF;
 }
 
+/* Headings use Helvetica */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif; /* All headings use Helvetica */
+    font-weight: bold; /* Makes all headings bold */
+}
+
+/* Links */
 a {
-    color: #FFFBEF; /* Cream white color for links */
-    text-decoration: underline; /* Underline all links */
+    color: #FFFBEF;
+    text-decoration: underline;
 }
 
+a:hover {
+    color: #A3B18A; /* Sage green on hover */
+}
+
+/* Header */
 #pistaHeader {
     background-image: url("images/indexpage_header_image.jpeg");
     background-repeat: no-repeat;
@@ -22,36 +36,29 @@ a {
     text-align: justify;
 }
 
-h2 {
-    margin: 20px 0;
-}
-
+/* Card Styles */
 .card {
     width: 100%;
     text-align: center;
-    margin: 10px; /* Adjusts spacing between cards */
-    padding: 20px; /* Adds padding to the card */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Align items in a column */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    background-color: transparent; /* Match website bg with 0.8 opacity */
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
     border: 1px solid transparent;
 }
 
 .card img {
-    width: 130%; /* Adjust the width as needed */
+    width: 130%;
     height: auto;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 5px; /* Adds space above the image */
-}
-
-
-.card-title {
     margin-top: 5px;
 }
 
+/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -74,6 +81,7 @@ h2 {
     border-bottom: 1px solid #dee2e6;
 }
 
+/* Close button */
 .close {
     float: right;
     font-size: 28px;
@@ -82,11 +90,12 @@ h2 {
 
 .close:hover,
 .close:focus {
-    color: #FFFBEF; /* Change close button color on hover */
+    color: #FFFBEF;
     text-decoration: none;
     cursor: pointer;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 20px;
@@ -101,7 +110,7 @@ footer {
 .social-button {
     display: inline-block;
     font-size: 20px;
-    color: #FFFBEF; /* Change social button color to cream white */
+    color: #FFFBEF;
     text-decoration: none;
     padding: 10px;
     border-radius: 50%;
@@ -109,5 +118,5 @@ footer {
 }
 
 .social-button:hover {
-    background-color: #ddd;
+    background-color: #A3B18A; /* Sage green for social buttons on hover */
 }
