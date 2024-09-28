@@ -110,13 +110,21 @@ footer {
 .social-button {
     display: inline-block;
     font-size: 20px;
-    color: #FFFBEF;
+    color: #FFFBEF; /* Cream color for social buttons */
     text-decoration: none;
     padding: 10px;
     border-radius: 50%;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
 }
 
 .social-button:hover {
-    background-color: #A3B18A; /* Sage green for social buttons on hover */
+    background-color: #A3B18A; /* Sage green for background on hover */
+    color: #FFFBEF; /* Keep the icon color cream on hover */
+}
+
+.sidebar {
+    padding: 20px; /* Add padding around the sidebar content */
+    border: 2px solid #FFFBEF; /* Cream border */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
 }
