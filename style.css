@@ -12,18 +12,26 @@ body {
 
 /* Headings use Helvetica */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Helvetica', sans-serif; /* All headings use Helvetica */
-    font-weight: bold; /* Makes all headings bold */
+    font-family: 'JetBrains Mono', monospace; /* Normal text uses JetBrains Mono */
+    font-style: italic;
+    color: #FFFBEF;
 }
 
 /* Links */
 a {
     color: #FFFBEF;
-    text-decoration: underline;
+}
+
+select:focus, select:active {
+    color: #A3B18A; /* Sage green text color when the dropdown is focused or expanded */
 }
 
 a:hover {
-    color: #A3B18A; /* Sage green on hover */
+    color: #A3B18A; /* Sage green for visited links */
+}
+
+.icon, .fa {
+    color: #FFFBEF; /* Cream color for all icons */
 }
 
 /* Header */
@@ -31,7 +39,7 @@ a:hover {
     background-image: url("images/indexpage_header_image.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height: 300px;
     width: 100%;
     text-align: justify;
 }
@@ -41,7 +49,8 @@ a:hover {
     width: 100%;
     text-align: center;
     margin: 10px;
-    padding: 20px;
+    margin-top: 0px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +60,7 @@ a:hover {
 }
 
 .card img {
-    width: 130%;
+    width: 100%;
     height: auto;
     cursor: pointer;
     border-radius: 5px;
@@ -77,8 +86,14 @@ a:hover {
 }
 
 .modal-header, .modal-footer {
+    font-family: 'JetBrains Mono', monospace; /* Normal text uses JetBrains Mono */
     padding: 5px;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #FFFBEF;
+    background-color: #191919;
+}
+
+.modal-body {
+    background-color: #191919;
 }
 
 /* Close button */
@@ -86,14 +101,9 @@ a:hover {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    color: #A3B18A;
 }
 
-.close:hover,
-.close:focus {
-    color: #FFFBEF;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 footer {
     text-align: center;
@@ -126,8 +136,14 @@ footer {
     color: #FFFBEF; /* Keep the icon color cream on hover */
 }
 .sidebar {
-    padding: 20px; /* Add padding around the sidebar content */
-    border: 2px solid #FFFBEF; /* Cream border */
+    border: 2px solid #A3B18A; /* Cream border */
     border-radius: 8px; /* Optional: add rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+    margin-top: 20px;
+}
+
+.sidebar {
+    padding-left: 1px;
+    margin-left: 1px;
+    padding-top: 15px;
+    padding-bottom: 1px;
 }
