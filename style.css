@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: #191919; 
     color: #FFFBEF;
+    overflow: auto;
 }
 
 /* Headings use Helvetica */
@@ -64,6 +65,7 @@ a:hover {
     justify-content: center;
     background-color: transparent;
     border: 1px solid transparent;
+    overflow: auto;
 }
 
 .card img {
@@ -161,3 +163,8 @@ footer {
     padding-top: 15px;
     padding-bottom: 1px;
 }
+
+.row {
+    overflow: auto; /* Enables scrolling if content overflows */
+    white-space: nowrap; /* Prevents wrapping of child elements */
+}   
