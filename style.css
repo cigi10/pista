@@ -227,4 +227,5 @@ footer {
     color: #FFFBEF; /* Text color */
     font-size: 1em; /* Normal font size for the paragraph */
     line-height: 1.5; /* Improve line spacing for readability */
+    text-wrap: auto;
 }
