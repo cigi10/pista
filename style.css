@@ -213,6 +213,8 @@ footer {
     margin: 20px 20px; /* Space above and below the box */
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure words break and wrap correctly */
 }
 
 .about-me-box h6 {
