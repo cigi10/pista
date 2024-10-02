@@ -120,6 +120,10 @@ a:hover {
     color: #A3B18A;
 }
 
+.close:hover {
+    color: #A3B18A; /* Sage green for visited links */
+}
+
 
 footer {
     text-align: center;
@@ -168,3 +172,38 @@ footer {
     overflow: auto; /* Enables scrolling if content overflows */
     white-space: nowrap; /* Prevents wrapping of child elements */
 }   
+
+.form-container {
+    max-width: 400px;          /* Limit the width of the form */
+    margin: 20px auto;        /* Center the form horizontally with auto margins */
+    padding: 20px;            /* Add padding inside the container */
+    border: 1px solid #A3B18A;   /* Light gray border around the form */
+    border-radius: 10px;      /* Rounded corners for the form */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    
+}
+
+.form-input, .form-textarea {      
+    margin: 10px 0;            /* Space above and below each field */
+    border: 2px solid #A3B18A;    /* Light gray border for input fields */
+    border-radius: 8px; /* Optional: add rounded corners */
+    font-size: 16px;   
+    color: #FFFBEF; 
+    padding: 20px 30px;             /* Optional: Padding inside input fields for better usability */
+    background-color: #2a2a2a;
+    width: calc(77% - 20px);             /* Full width minus borders and padding */
+    height: 30px;     
+    font-family: 'JetBrains Mono', monospace; 
+}
+
+.btn-submit {
+    background-color: transparent; 
+    color: #FFFBEF;                   /* Text color for the button */         
+    border-radius: 8px;               /* Rounded corners */
+    border: 2px solid #A3B18A;        /* Specify border width and style */
+    font-size: 16px;                   /* Font size */
+    cursor: pointer;                   /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    font-family: 'JetBrains Mono', monospace; 
+    padding: 5px 15px;
+}

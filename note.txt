@@ -12,3 +12,22 @@ font 2 = https://www.jetbrains.com/lp/mono/#how-to-install
 https://rsms.me/inter/#glyphs/triagdn - opening and closing menu and symbols
 https://chooser-beta.creativecommons.org/ - licnse 
 
+
+
+    <h2>Contact Us</h2>
+    <div class="form-container">
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" class="form-input" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="text" name="email" class="form-input" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message" class="form-textarea"></textarea></label>
+        </p>
+        <p>
+          <button type="submit" class="btn-submit">Send</button>
+        </p>
+      </form>
+    </div>
