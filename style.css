@@ -229,3 +229,18 @@ footer {
     line-height: 1.5; /* Improve line spacing for readability */
     text-wrap: auto;
 }
+
+.pin-container {
+    text-align: left;
+    margin-top: -30px; /* Adjust this value to make the pin overlap slightly with the header */
+    position: relative;
+    left: 30px; /* Move the pin 10px to the right */
+    z-index: 10; /* Ensures the pin appears above the content */
+}
+
+.pin-icon {
+    width: 60px; /* Adjust size of the pin */
+    height: 60px;
+    padding: 5px; /* Space around the icon */
+    display: inline-block;
+}
