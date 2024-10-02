@@ -41,7 +41,6 @@ a:hover {
 
 /* Header */
 #pistaHeader {
-    background-image: url("images/indexpage_header_image.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;  /* Remove unnecessary padding */
@@ -206,4 +205,26 @@ footer {
     transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
     font-family: 'JetBrains Mono', monospace; 
     padding: 5px 15px;
+}
+
+.about-me-box {
+    border: 2px solid #A3B18A; /* Sage green border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 20px; /* Space above and below the box */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.about-me-box h6 {
+    text-align: left; /* Align header to the left */
+    color :#FFFBEF; /* Text color */
+    font-size: 1.5em; /* Increase font size for the header */
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.about-me-box p {
+    text-align: left; /* Align paragraph to the left */
+    color: #FFFBEF; /* Text color */
+    font-size: 1em; /* Normal font size for the paragraph */
+    line-height: 1.5; /* Improve line spacing for readability */
 }

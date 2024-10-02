@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pistachio's Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="pista.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <body>
+        <div class="row">
+            <div id="pistaHeader">
+                <img src="assets/images/indexpage_header_image.jpeg" alt="Header Image" />
+            </div>
+        </div>
+    
+        <div class="row">
+            <h5 style="padding-right: 30px; padding-top: 10px; color: #FFFBEF; width: 100%; text-align: right;">
+                Wallpapers by cigi10
+            </h5>
+            <br>
+        </div>
+    
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-2">
+                <div id="sidebar-navigation" class="sidebar"></div>
+            </div>
+    
+            <div class="col-xs-12 col-md-6 col-lg-10">
+                <div id='imageDisplayArea1' class="row" style="padding-left: 10px;">
+                    
+                    
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/yellow-orange-warm-gradient-wallpaper.jpg" alt="yellow-orange-warm-gradient-wallpaper" id="image_8" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/blue-tye-dye-spiral-wallpaper.jpg" alt="blue-tye-dye-spiral-wallpaper" id="image_2" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+    
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/brown-coffee-gradient-wallpaper.jpg" alt="brown-coffee-gradient-wallpaper" id="image_3" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+                </div>
+    
+                <div id='imageDisplayArea1' class="row" style="padding-left: 10px;">
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/coral-summer-warm-gradient-wallpaper.jpg" alt="coral-summer-warm-gradient-wallpaper" id="image_4" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+    
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/pink-peachy-gradient-wallpaper.jpg" alt="pink-peachy-gradient-wallpaper" id="image_5" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+    
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/red-blue-yellow-abstract-gradient-wallpaper.jpg" alt="red-blue-yellow-abstract-gradient-wallpaper" id="image_6" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+                </div>
+    
+                <div id='imageDisplayArea2' class="row" style="padding-left: 10px;">
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/sage-green-matcha-gradient-wallpaper.jpg" alt="sage-green-matcha-gradient-wallpaper" id="image_7" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+    
+                    
+
+                    <div class="col-sm card">
+                        <img src="assets/images/wallpapers/blue-purple-gradient-wallpaper.jpg" alt="blue-purple-gradient-wallpaper-aura" id="image_1" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+    
+    
+                    <div class="col-sm card"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <!-- The Modal -->
+    <div id="imageDownloadModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalHeader"></h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img id="modalImage" src="" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>website maxxin</p>
+                            <p>maamda aye maamadi ay maam tu pagal</p>
+                            <button id="downloadButton" class="btn" style="color: #A3B18A; background-color: transparent;" onclick="downloadImage();"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    This image is a work of art by an individual. Please give due credit to the creator.
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="rounded-social-buttons">
+            <a class="social-button pinterest" href="https://in.pinterest.com/CiGi10/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigis_corner/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigi.eats/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/in/prachi-gore-604416294" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-button youtube" href="https://youtube.com/@poistah?si=hJWnNMEkSg8xhiKW" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social-button email" href="mailto:chiprarego@gmail.com?subject=Contact&body=Hello!%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+QsEGJLV8z9D5l2p2Eiw5sRojkDikF0wNfo3xkG2a" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-c2FWWt4iFZB1TkEnkT/5fyCJ5e6cllO4hOOn+HEhKCEhuB1KO2z8P1ay6k6h1IBH9" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+QsEGJLV8z9D5l2p2Eiw5sRojkDikF0wNfo3xkG2a" crossorigin="anonymous"></script>
+
+    <script>
+        
+// A $( document ).ready() block.
+        $( document ).ready(function() {
+            
+            $(function(){
+                console.log( "ready!" );
+                $("#sidebar-navigation").load("sidebar.html");
+            })
+            
+        });
+
+        function showDownloadPopup(imgElement) {
+            var modal = document.getElementById("imageDownloadModal");
+            var modalImg = document.getElementById("modalImage");
+            var modalHeader = document.getElementById("modalHeader");
+            
+            modalImg.src = imgElement.src;
+            modalHeader.textContent = imgElement.alt;
+            
+            modal.style.display = "block";
+        }
+
+        document.querySelector(".modal .close").onclick = function() {
+            document.getElementById("imageDownloadModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("imageDownloadModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

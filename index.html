@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,12 @@
 
 <body>
     <div class="row">
-        <div id="pistaHeader"></div>
+        <div id="pistaHeader">
+            <img src="assets/images/indexpage_header_image.jpeg" alt="Header Image" />
+        </div>
     </div>
     <div class="row">
-        <h5 style="padding-right: 30px; padding-top: 10px; color: #FFFBEF; width: 100%; text-align: right;" >Wallpapers by cigi10</h5><br>
+        <h5 style="padding-right: 30px; padding-top: 10px; color: #FFFBEF; width: 100%; text-align: right;" >About me</h5><br>
     </div> 
     <div class="row">
         <div class="col-xs-12 col-md-6 col-lg-2">
@@ -32,69 +34,10 @@
         </div>
        
         <div class="col-xs-12 col-md-6 col-lg-10">
-            
-            <div id='imageDisplayArea1' class="row" style="padding-left: 10px;">
-                
-                <div class="col-sm card">
-                    <img src="images/train.png" alt="Train Image" id="image_1" onclick="showDownloadPopup(this);">
-                </div>
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/12/83/61/128361784b59dce7ce3b6d7230856466.jpg" alt="Image 2" id="image_2" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/0e/b2/e4/0eb2e47cd414749579aa9f3524fd8cf6.jpg" alt="Image 3" id="image_3" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                
-                
-                
-            </div>
-            <div id='imageDisplayArea1' class="row" style="padding-left: 10px;">
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/ff/77/b7/ff77b76ba094f7cf4354752691b30787.jpg" alt="Image 4" id="image_4" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/ec/a3/93/eca3932ae6a1e5a745b920b2e5846cea.jpg" alt="Image 5" id="image_5" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                <div class="col-sm card">
-                    <img src="images/train.png" alt="Train Image" id="image_1" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-            </div>
-            <div id='imageDisplayArea2' class="row" style="padding-left: 10px;">
-                
-
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/12/83/61/128361784b59dce7ce3b6d7230856466.jpg" alt="Image 2" id="image_2" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/0e/b2/e4/0eb2e47cd414749579aa9f3524fd8cf6.jpg" alt="Image 3" id="image_3" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/ff/77/b7/ff77b76ba094f7cf4354752691b30787.jpg" alt="Image 4" id="image_4" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                
-
-                
-                
-            </div>
-            <div id='imageDisplayArea2' class="row" style="padding-left: 10px;">
-                <div class="col-sm card">
-                    <img src="https://i.pinimg.com/736x/ec/a3/93/eca3932ae6a1e5a745b920b2e5846cea.jpg" alt="Image 5" id="image_5" onclick="showDownloadPopup(this);">
-                    <h5 class="card-title"><a href="image-download.html"></a></h5>
-                </div>
-                <div class="col-sm card">
-
-                </div>
-                <div class="col-sm card">
-
-                </div>
+            <div class="about-me-box">
+                <h6>Hey, it's Chipra</h6>
+                <p>This is a brief description about me. <br> 
+                I'm passionate about art, design and learning new things about web dev and electronics.</p>
             </div>
         </div>
     </div>
@@ -155,29 +98,6 @@
             
         });
 
-        function showDownloadPopup(imgElement) {
-            var modal = document.getElementById("imageDownloadModal");
-            var modalImg = document.getElementById("modalImage");
-            var modalHeader = document.getElementById("modalHeader");
-            
-            modalImg.src = imgElement.src;
-            modalHeader.textContent = imgElement.alt;
-            
-            modal.style.display = "block";
-        }
-
-        document.querySelector(".modal .close").onclick = function() {
-            document.getElementById("imageDownloadModal").style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            var modal = document.getElementById("imageDownloadModal");
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        
     </script>
 </body>
 </html>
