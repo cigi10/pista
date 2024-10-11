@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <body>
+    
         <div class="row">
             <div id="pistaHeader">
                 <img src="assets/images/indexpage_header_image.jpeg" alt="Header Image" />
@@ -44,7 +44,7 @@
             </div>
     
             <div class="col-xs-12 col-md-6 col-lg-10">
-                <div id='imageDisplayArea1' class="row" style="padding-left: 10px;">
+                <div id='imageDisplayArea1' class="row" style="padding-left: 10px; margin-top: 0px; margin-bottom: 0px;">
                     
                     
                     <div class="col-sm card">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-    </body>
+    
     
     <!-- The Modal -->
     <div id="imageDownloadModal" class="modal">
@@ -114,8 +114,6 @@
                             <img id="modalImage" src="" alt="Image" class="img-fluid">
                         </div>
                         <div class="col-12 col-md-6">
-                            <p>website maxxin</p>
-                            <p>maamda aye maamadi ay maam tu pagal</p>
                             <button id="downloadButton" class="btn" style="color: #A3B18A; background-color: transparent;" onclick="downloadImage();"><i class="fas fa-download"></i></button>
                         </div>
                     </div>
@@ -140,11 +138,6 @@
     </footer>
     
 
-    <!-- JavaScript files -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+QsEGJLV8z9D5l2p2Eiw5sRojkDikF0wNfo3xkG2a" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-c2FWWt4iFZB1TkEnkT/5fyCJ5e6cllO4hOOn+HEhKCEhuB1KO2z8P1ay6k6h1IBH9" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+QsEGJLV8z9D5l2p2Eiw5sRojkDikF0wNfo3xkG2a" crossorigin="anonymous"></script>
-
     <script>
         
 // A $( document ).ready() block.
@@ -157,17 +150,7 @@
             
         });
 
-        function showDownloadPopup(imgElement) {
-            var modal = document.getElementById("imageDownloadModal");
-            var modalImg = document.getElementById("modalImage");
-            var modalHeader = document.getElementById("modalHeader");
-            
-            modalImg.src = imgElement.src;
-            modalHeader.textContent = imgElement.alt;
-            
-            modal.style.display = "block";
-        }
-
+       
         document.querySelector(".modal .close").onclick = function() {
             document.getElementById("imageDownloadModal").style.display = "none";
         }

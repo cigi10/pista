@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pistachio's Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="pista.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div id="pistaHeader" style="width: 100%;">
+            <img src="assets/images/indexpage_header_image.jpeg" alt="Header Image" />
+        </div>
+    </div>
+    
+        <!-- Pin Icon between the header and content -->
+    <div class="pin-container">
+        <img src="assets/logo.svg" class="pin-icon" alt="Logo Icon">
+    </div>
+
+    <div class="row">
+        <h5 style="padding-right: 30px; padding-top: 10px; color: #FFFBEF; width: 100%; text-align: right;" >About me</h5><br>
+    </div> 
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-2">
+            <div id="sidebar-navigation" class="sidebar"></div>
+        </div>
+       
+        <div class="col-xs-12 col-md-6 col-lg-10">
+            <div class="gallery">
+                <div class="gallery-item"><img src="assets/images/indexpage_header_image.jpeg" alt="Image 1" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/images/wallpapers/blue-purple-gradient-wallpaper.jpg" alt="Image 4" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/images/train.png" alt="Image 2" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/images/wallpapers/brown-coffee-gradient-wallpaper.jpg" alt="Image 5" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/images/indexpage_header_image.jpeg" alt="Image 1" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/images/train.png" alt="Image 2" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/logo.svg" alt="Image 3" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/images/wallpapers/blue-purple-gradient-wallpaper.jpg" alt="Image 4" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/images/wallpapers/brown-coffee-gradient-wallpaper.jpg" alt="Image 5" onclick="showDownloadPopup(this);"></div>
+                <div class="gallery-item"><img src="assets/logo.svg" alt="Image 3" onclick="showDownloadPopup(this);"></div>
+        
+            </div>
+        </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div id="imageDownloadModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalHeader"></h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img id="modalImage" src="" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6">
+                           
+                          
+                            <button id="downloadButton" class="btn" style="color: #A3B18A; background-color: transparent;" onclick="downloadImage();"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    This image is a work of art by an individual. Please give due credit to the creator.
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+            
+    <script>
+        
+        // A $( document ).ready() block.
+        $( document ).ready(function() {
+            
+            $(function(){
+                console.log( "ready!" );
+                $("#sidebar-navigation").load("sidebar.html");
+            })
+            
+        });
+
+        document.querySelector(".modal .close").onclick = function() {
+            document.getElementById("imageDownloadModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("imageDownloadModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+    </script>
+    
+
+</body>
+</html>

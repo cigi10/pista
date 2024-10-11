@@ -9,16 +9,24 @@ function showDownloadPopup(imageId) {
     var modalImage = document.getElementById("modalHeader");
     modalHeader.innerHTML = imageId.alt;
     
-    
-    
-
     // When the user clicks the button, open the modal 
     
     modal.style.display = "block";
-
-
     
 }
+
+/*
+function showDownloadPopup(imgElement) {
+    var modal = document.getElementById("imageDownloadModal");
+    var modalImg = document.getElementById("modalImage");
+    var modalHeader = document.getElementById("modalHeader");
+    
+    modalImg.src = imgElement.src;
+    modalHeader.textContent = imgElement.alt;
+    
+    modal.style.display = "block";
+}
+*/
 
 function downloadImage() {
 
