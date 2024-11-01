@@ -140,13 +140,17 @@ a:hover {
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .card {
+    .card,
+    .card3,
+    .card4 {
         flex: 0 0 calc(50% - 20px); /* Two cards per row on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    .card {
+    .card,
+    .card3,
+    .card4 {
         flex: 0 0 calc(100% - 20px); /* One card per row on very small screens */
     }
 }
