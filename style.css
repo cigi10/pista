@@ -355,51 +355,26 @@ footer {
     }
 }
 
-/* Styling the image container */
+/* Container for the main image and logo */
 .image-container {
-    position: relative; /* This ensures that the logo can be positioned over the image */
+    position: relative; /* Enables positioning of .logo-overlay within it */
+    display: inline-block; /* Only takes the space of its content */
 }
 
-/* Ensuring the image takes full width and is responsive */
-.image-container img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain the aspect ratio */
+/* Main image styling */
+.main-image {
+    display: block; /* Makes image behave as a block-level element */
+    width: 100%; /* Adjust based on your needs */
+    height: auto;
 }
 
 /* Logo overlay styling */
-/* Make sure the image container is relative so we can position the logo inside */
-.card3, .card4 {
-    position: relative; /* Ensures the logo is positioned relative to this container */
-}
-
-
 .logo-overlay {
     position: absolute;
-    top: calc(100% - 40px); /* Adjust to 40px from top of the image */
-    left: calc(100% - 40px); /* Adjust to 40px from left of the image */
-    width: 30px;  
-    height: 30px; 
-    z-index: 10;  
-    pointer-events: none; 
+    top: 10%; /* 10px from the bottom of the container */
+    right: 10%; /* 10px from the right of the container */
+    width: 10%; /* Logo width */
+    height: 10%; /* Maintains aspect ratio */
+    z-index: 10; /* Ensures it appears above the main image */
+    pointer-events: none; /* Allows clicks to pass through */
 }
-
-.logo-overlay img {
-    width: 100%; 
-    height: auto; 
-}
-
-
-@media (max-width: 768px) {
-    .logo-overlay {
-        width: 25px; 
-        height: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-overlay {
-        width: 20px; 
-        height: 20px;
-    }
-}
-
